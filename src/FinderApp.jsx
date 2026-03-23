@@ -132,7 +132,7 @@ function FinderApp() {
 
     return (
         <div className="container mt-4">
-            <h2 className="text-white press-start mt-5">BUSCADOR IPS</h2>
+            <h2 className="text-white press-start mt-5 text-center text-md-start">BUSCADOR IPS</h2>
 
 
             <div className="row mb-3">
