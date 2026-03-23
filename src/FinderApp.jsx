@@ -271,7 +271,7 @@ function FinderApp() {
                                         width="100%"
                                         height="100%"
                                         style={{ border: 0 }}
-                                        src={`https://www.google.com/maps?q=${selectedIp.lat},${selectedIp.long}&hl=es&z=12&output=embed`}
+                                        src={`https://www.google.com/maps?q=${selectedIp.lat},${selectedIp.lon}&hl=es&z=12&output=embed`}
                                         allowFullScreen
                                     ></iframe>
                                 </div>
@@ -370,7 +370,7 @@ function FinderApp() {
                             <td>{item.company_name}</td>
                             <td>{item.company_domain}</td>
                             <td>{item.type}</td>
-                            <td>{item.lat}, {item.long}</td>
+                            <td>{item.lat}, {item.lon}</td>
                             <td>{item.country}</td>
                             <td>
                                 <a href="javascript:void(0);" className="text-white"
