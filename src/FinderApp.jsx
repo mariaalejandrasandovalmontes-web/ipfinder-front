@@ -30,7 +30,7 @@ function FinderApp() {
     const fetchData = (page = 1, query = "") => {
         setLoading(true);
         setLoading(true);
-        let url = `http://localhost:8000/list?per_page=10&page=${page}`;
+        let url = `https://ipfinder-back-production.up.railway.app/list?per_page=10&page=${page}`;
         if (query) {
             url += `&query=${query}`;
         }
@@ -62,7 +62,7 @@ function FinderApp() {
             return;
         }
 
-        fetch(`http://localhost:8000/get?ip=${ipQuery}`)
+        fetch(`https://ipfinder-back-production.up.railway.app/get?ip=${ipQuery}`)
             .then((res) => res.json())
             .then((json) => {
                 if (!json.success) {
@@ -89,7 +89,7 @@ function FinderApp() {
     };
 
     const deleteRecord = (id) => {
-        fetch(`http://localhost:8000/remove/${id}`, {
+        fetch(`https://ipfinder-back-production.up.railway.app/remove/${id}`, {
             method: "DELETE",
         })
             .then((res) => res.json())
