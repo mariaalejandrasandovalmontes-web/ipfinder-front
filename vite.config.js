@@ -9,5 +9,6 @@ export default defineConfig({
   ],
   build: {
     outDir: 'dist'   // 👈 asegura que la salida sea dist
-  }
+  },
+  base: './'         // 👈 corrige rutas de assets en producción
 })
