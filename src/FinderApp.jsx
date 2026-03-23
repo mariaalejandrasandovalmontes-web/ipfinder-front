@@ -256,7 +256,7 @@ function FinderApp() {
                                         <span><strong>Latitud:</strong> {selectedIp.lat}</span>
                                     </div>
                                     <div className="col-3">
-                                        <span><strong>Longitud:</strong>{selectedIp.long}</span>
+                                        <span><strong>Longitud:</strong>{selectedIp.lon}</span>
                                     </div>
                                     <div className="col-3">
                                         <span><strong>CP:</strong> {selectedIp.zipcode}</span>
