@@ -243,22 +243,22 @@ function FinderApp() {
                             </div>
                             <div className="modal-body">
                                 <div className="row">
-                                    <div className="col-3">
+                                    <div className="col-lg-3 col-md-6 col-xs-12">
                                         <span><strong>Dominio:</strong> {selectedIp.company_domain}</span>
                                     </div>
-                                    <div className="col-3">
+                                    <div className="col-lg-3 col-md-6 col-xs-12">
                                         <span><strong>Tipo:</strong> {selectedIp.type}</span>
                                     </div>
-                                    <div className="col-5">
+                                    <div className="col-lg-5 col-md-6 col-xs-12">
                                         <span><strong>País:</strong> {selectedIp.country}</span>
                                     </div>
-                                    <div className="col-3">
+                                    <div className="col-lg-3 col-md-6 col-xs-12">
                                         <span><strong>Latitud:</strong> {selectedIp.lat}</span>
                                     </div>
-                                    <div className="col-3">
+                                    <div className="col-lg-3 col-md-6 col-xs-12">
                                         <span><strong>Longitud:</strong>{selectedIp.lon}</span>
                                     </div>
-                                    <div className="col-3">
+                                    <div className="col-lg-3 col-md-6 col-xs-12">
                                         <span><strong>CP:</strong> {selectedIp.zipcode}</span>
                                     </div>
                                 </div>
@@ -335,11 +335,11 @@ function FinderApp() {
                     <thead className="">
                     <tr>
                         <th>IP</th>
-                        <th>RIR</th>
+                        <th className="d-lg-table-cell">RIR</th>
                         <th>Compañía</th>
                         <th>Dominio</th>
                         <th>Tipo</th>
-                        <th>Coordenadas</th>
+                        <th className="d-lg-table-cell">Coordenadas</th>
                         <th>País</th>
                         <th></th>
                     </tr>
@@ -366,11 +366,11 @@ function FinderApp() {
                                     <i className="bi bi-info-circle"></i> {item.ip}
                                 </strong>
                             </td>
-                            <td>{item.rir}</td>
+                            <td className="d-lg-table-cell">{item.rir}</td>
                             <td>{item.company_name}</td>
                             <td>{item.company_domain}</td>
                             <td>{item.type}</td>
-                            <td>{item.lat}, {item.lon}</td>
+                            <td className="d-lg-table-cell">{item.lat}, {item.lon}</td>
                             <td>{item.country}</td>
                             <td>
                                 <a href="javascript:void(0);" className="text-white"
